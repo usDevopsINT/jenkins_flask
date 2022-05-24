@@ -11,6 +11,7 @@ pipeline {
             steps{
                 sh 'cd flaskandjenkins'
                 sh 'pwd'
+                sh 'cd flaskandjenkins'
                 sh 'python3 flask3.py &'
             }
         }
