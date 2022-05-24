@@ -9,6 +9,7 @@ pipeline {
         }
         stage('build...'){
             steps{
+                sh 'ls'
                 sh 'python3 flask3.py &'
             }
         }
