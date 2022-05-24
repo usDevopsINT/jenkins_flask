@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build...'){
             steps{
-                sh 'ls'
+                sh 'cd flaskandjenkins'
                 sh 'python3 flask3.py &'
             }
         }
