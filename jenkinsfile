@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('cloning...') {
+            steps {
+                git branch: 'main', url: 'https://github.com/usDevopsINT/jenkins_flask'
+            }
+        }
+        stage('build...'){
+            steps{
+                echo "building"
+            }
+        }
+        stage('testing'){
+            steps{
+                echo "testing"
+            }
+        }
+    }
+}
